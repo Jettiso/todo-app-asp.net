@@ -2716,11 +2716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jet\\Documents\\Projects\\todo-app-asp.net\\TodoList\\TodoList.csproj",
+      "projectUniqueName": "C:\\Users\\Jet\\Documents\\Projects\\csharp\\todo-app-asp.net\\TodoList\\TodoList.csproj",
       "projectName": "TodoList",
-      "projectPath": "C:\\Users\\Jet\\Documents\\Projects\\todo-app-asp.net\\TodoList\\TodoList.csproj",
+      "projectPath": "C:\\Users\\Jet\\Documents\\Projects\\csharp\\todo-app-asp.net\\TodoList\\TodoList.csproj",
       "packagesPath": "C:\\Users\\Jet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jet\\Documents\\Projects\\todo-app-asp.net\\TodoList\\obj\\",
+      "outputPath": "C:\\Users\\Jet\\Documents\\Projects\\csharp\\todo-app-asp.net\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jet\\AppData\\Roaming\\NuGet\\NuGet.Config",

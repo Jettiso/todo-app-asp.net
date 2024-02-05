@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "npoC6ifAgK5vF+SvkZDUKzJUJhjPc6+/1Jw3QY6aXKW5bMsh6IMQLat2MS6Gs6MeVIDPbSAQuuBJhvd0VFMeeA==",
+  "dgSpecHash": "ohblonF80cfeZreKr2uef9VopMAS9MICsP6JPKOEDB04uZEY/J8Zt5OjrVRVelze86zgL3TZaqFe3bGk6MXbpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jet\\Documents\\Projects\\todo-app-asp.net\\TodoList\\TodoList.csproj",
+  "projectFilePath": "C:\\Users\\Jet\\Documents\\Projects\\csharp\\todo-app-asp.net\\TodoList\\TodoList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jet\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Jet\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
