@@ -1,8 +1,10 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import TodoItem from "./components/TodoItem";
 
 function App() {
 	const [inputValue, setInputValue] = useState("");
+	const [todos, setTodos] = useState([]);
 
 	const handleChange = (e) => {
 		setInputValue(e.target.value);
@@ -20,33 +22,38 @@ function App() {
 				Name: inputValue,
 				IsComplete: false,
 			});
-			console.log(response.data);
+			return response;
 		} catch (error) {
 			console.error("Error sending data:", error);
 		}
 	};
 	// TODO: Render the Todos from DB through components and pass the name through props and state
-	const fetchData = async () => {
-		try {
-			const response = await axios.get("http://localhost:5217/api/todo");
+	useEffect(() => {
+		const fetchDataWithRetry = async () => {
+			try {
+				const response = await axios.get("http://localhost:5217/api/todo");
+				setTodos(response.data);
+			} catch (error) {
+				console.log(error);
+			}
+		};
 
-			console.log(response.data);
-		} catch (error) {
-			console.log(error)
-		}
-	}
+		fetchDataWithRetry();
 
-	fetchData();
+	
+	}, []);
 
-
-
-
+	console.log(todos);
 	return (
 		<>
 			<div className='todo_list'>
 				<input type='text' placeholder='Add a task' value={inputValue} onChange={handleChange} />
 				<button onClick={sendData}>Add</button>
-				<div className='todo_tasks'></div>
+				<div className='todo_tasks'>
+					{todos.map((todo) => {
+						return <TodoItem key={todo.id} name={todo.name} />;
+					})}
+				</div>
 			</div>
 		</>
 	);
